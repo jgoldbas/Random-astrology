@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #messageContainer {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 300px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showRandomAstrology()">Generate Random Astrology</button>
+  <div id="messageContainer"></div>
+
+  <script src="astrology.js"></script>
+  <script>
+    function showRandomAstrology() {
+      var randomMessage = generate_astrology();
+      document.getElementById('messageContainer').textContent = randomMessage;
+    }
+  </script>
+</body>
+</html>

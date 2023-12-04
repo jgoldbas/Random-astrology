@@ -58,6 +58,8 @@ const generate_idx = (array) => {
 }
 const generate_astrology = () => {
     let sign = zodiac_signs_and_symbols[generate_idx(zodiac_signs_and_symbols)];
+    // console.log(sign['sign']);  
+    // OR: 
     // console.log(sign.sign);
     let trait = personality_traits[generate_idx(personality_traits)];
     // console.log(sign);
@@ -66,4 +68,4 @@ const generate_astrology = () => {
     return `Your sign is ${sign.sign} and your symbol is ${sign.symbol} and this week you're feeling ${trait} and today you should ${recommendation}.`;
 }
 // Debugging:
-// console.log(generate_astrology());
+console.log(generate_astrology());
